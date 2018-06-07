@@ -9,14 +9,17 @@
 import UIKit
 import Lottie
 
+/**
+ * 免费json动画网站：https://www.lottiefiles.com
+ * url加载需要时间
+ */
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 免费json动画网站：https://www.lottiefiles.com
-        let animationView = LOTAnimationView(contentsOf: URL(string: "https://www.lottiefiles.com/storage/datafiles/w1J6yNaftdTVudX/data.json")!)
-//        let animationView = LOTAnimationView(name: "servishero_loading")
+//        let animationView = LOTAnimationView(contentsOf: URL(string: "https://www.lottiefiles.com/storage/datafiles/w1J6yNaftdTVudX/data.json")!)
+        let animationView = LOTAnimationView(name: "servishero_loading")
         animationView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
         animationView.center = self.view.center
         
